@@ -73,7 +73,7 @@ Please create your shim binaries starting with the 15.7 shim release tar file: h
 This matches https://github.com/rhboot/shim/releases/tag/15.7 and contains the appropriate gnu-efi source.
 
 *******************************************************************************
-yes, but with NX compatibility patch.
+yes.
 
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to get this binary:
@@ -83,6 +83,7 @@ https://github.com/lenovo-lux/shim-review/tree/lux1.0-shim-x64-ia32-20221215
 *******************************************************************************
 ### What patches are being applied and why:
 *******************************************************************************
+Since NX support is mandatory for signing since November 30, we applied the patch using the files from:
 https://github.com/rhboot/shim/pull/530/files
 Enable the NX compatibility flag by default. #530
 
