@@ -1,6 +1,6 @@
 This repo is for review of requests for signing shim.  To create a request for review:
 
-- clone this repo
+- clone this repo...
 - edit the template below
 - add the shim.efi to be signed
 - add build logs
