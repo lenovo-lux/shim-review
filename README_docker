@@ -1,0 +1,8 @@
+# clean old builds, build.log
+sudo make clean  
+
+# generate shimx64.efi, shimia32.efi and build.log
+sudo make build
+
+================================================
+
