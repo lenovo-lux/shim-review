@@ -12,15 +12,14 @@ Confirm the following are included in your repo, checking each box:
 *******************************************************************************
 ### What is the link to your tag in a repo cloned from rhboot/shim-review?
 *******************************************************************************
-https://github.com/lenovo-lux/shim-review/tree/lux1.0-shim-x64-20221215
-
+https://github.com/lenovo-lux/shim-review/tree/lux1.0-shim-x64-20221221
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
 
-e1d41c65759939b128a2662ad71c28eaf1be97da51e95f49563396468768134d  shimx64.efi
+5900792c563b2a47f8806afc2be18f472c016aec612fb8679550e7116457fe36  shimx64.efi
 
 *******************************************************************************
 ### What is the link to your previous shim review request (if any, otherwise N/A)?
 *******************************************************************************
-N/A. This is our first request.
+N/A.

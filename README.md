@@ -78,14 +78,20 @@ yes.
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to get this binary:
 *******************************************************************************
-https://github.com/lenovo-lux/shim-review/tree/lux1.0-shim-x64-20221215
+https://github.com/lenovo-lux/shim-review/tree/lux1.0-shim-x64-20221221
 
 *******************************************************************************
 ### What patches are being applied and why:
 *******************************************************************************
-Since NX support is mandatory for signing since November 30, we applied the patch using the files from:
-https://github.com/rhboot/shim/pull/530/files
+1) 
+Make sbat_var.S parse right with buggy gcc/binutils #535
+https://github.com/rhboot/shim/pull/535/
+2)
+Add validation function for Microsoft signing #531
+https://github.com/rhboot/shim/pull/531/commits
+3)
 Enable the NX compatibility flag by default. #530
+https://github.com/rhboot/shim/pull/530/files
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader what exact implementation of Secureboot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
@@ -181,7 +187,7 @@ This is our first shim review submission.
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
-e1d41c65759939b128a2662ad71c28eaf1be97da51e95f49563396468768134d  shimx64.efi
+5900792c563b2a47f8806afc2be18f472c016aec612fb8679550e7116457fe36  shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your SHIM?
@@ -232,7 +238,7 @@ We use the lastest version from debian bullseye (2.06-3).
 *******************************************************************************
 ### If your SHIM launches any other components, please provide further details on what is launched.
 *******************************************************************************
-N/A.
+only FWUPD. 
 
 *******************************************************************************
 ### If your GRUB2 launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
