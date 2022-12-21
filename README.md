@@ -83,14 +83,11 @@ https://github.com/lenovo-lux/shim-review/tree/lux1.0-shim-x64-20221221
 *******************************************************************************
 ### What patches are being applied and why:
 *******************************************************************************
-1) 
-Make sbat_var.S parse right with buggy gcc/binutils #535
+1) Make sbat_var.S parse right with buggy gcc/binutils #535
 https://github.com/rhboot/shim/pull/535/
-2)
-Add validation function for Microsoft signing #531
+2) Add validation function for Microsoft signing #531
 https://github.com/rhboot/shim/pull/531/commits
-3)
-Enable the NX compatibility flag by default. #530
+3) Enable the NX compatibility flag by default. #530
 https://github.com/rhboot/shim/pull/530/files
 
 *******************************************************************************
