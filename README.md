@@ -78,7 +78,7 @@ yes.
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to get this binary:
 *******************************************************************************
-https://github.com/lenovo-lux/shim-review/tree/lux1.0-shim-x64-20221221
+https://github.com/lenovo-lux/shim-review/tree/lux1.0-shim-x64-20230111
 
 *******************************************************************************
 ### What patches are being applied and why:
@@ -131,8 +131,7 @@ This is our first shim review submission. We have not previously released shims.
 *******************************************************************************
 ### If these fixes have been applied, have you set the global SBAT generation on your GRUB binary to 3?
 *******************************************************************************
-Not applicable.
-This is our first shim review submission. We have not previously released shims
+Yes.
 
 *******************************************************************************
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
@@ -209,12 +208,11 @@ sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,3,UEFI shim,shim,1,https://github.com/rhboot/shim
 shim.lux,1,LUX,shim,15.7,mail:lux@lenovo.com
 
-GRUB:
+GRUB: 
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md 
-grub,2,Free Software Foundation,grub,2.06,https://www.gnu.org/software/grub/ 
-grub.debian,1,Debian,grub2,2.06-3,https://tracker.debian.org/pkg/grub2
+grub,3,Free Software Foundation,grub,2.06,https://www.gnu.org/software/grub/ 
+grub.debian,1,Debian,grub2,2.06-3,https://tracker.debian.org/pkg/grub2 
 grub.lux,1,LUX,grub2,2.06-3-lux,mail:lux@lenovo.com
-
 
 FWUPD:
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
