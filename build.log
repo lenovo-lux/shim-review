@@ -1,16 +1,16 @@
-Sending build context to Docker daemon  3.951MB
-Step 1/24 : FROM debian:bullseye
+Sending build context to Docker daemon  50.18kB
+Step 1/23 : FROM debian:bullseye
  ---> d8cacd17cfdc
-Step 2/24 : ARG CERT_FILE="LUX_CA_PUB.cer"
- ---> Running in c9357d186ec5
-Removing intermediate container c9357d186ec5
- ---> 4dc4f6700a5d
-Step 3/24 : RUN apt-get -y -qq update
- ---> Running in 3fed10e78b00
-Removing intermediate container 3fed10e78b00
- ---> 78a3cf6910bd
-Step 4/24 : RUN apt-get -y -qq install gcc make bzip2 efitools curl wget git
- ---> Running in 25cdf0f6635b
+Step 2/23 : ARG CERT_FILE="LUX_CA_PUB.cer"
+ ---> Running in bb1eded221e9
+Removing intermediate container bb1eded221e9
+ ---> 0e81d0503f5b
+Step 3/23 : RUN apt-get -y -qq update
+ ---> Running in 0470af78bbfa
+Removing intermediate container 0470af78bbfa
+ ---> 102695c95c24
+Step 4/23 : RUN apt-get -y -qq install gcc make bzip2 efitools curl wget git
+ ---> Running in 286bd0d3efd0
 [91mdebconf: delaying package configuration, since apt-utils is not installed
 [0mSelecting previously unselected package perl-modules-5.32.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6661 files and directories currently installed.)
@@ -41,8 +41,8 @@ Selecting previously unselected package bzip2.
 Preparing to unpack .../08-bzip2_1.0.8-4_amd64.deb ...
 Unpacking bzip2 (1.0.8-4) ...
 Selecting previously unselected package openssl.
-Preparing to unpack .../09-openssl_1.1.1n-0+deb11u3_amd64.deb ...
-Unpacking openssl (1.1.1n-0+deb11u3) ...
+Preparing to unpack .../09-openssl_1.1.1n-0+deb11u4_amd64.deb ...
+Unpacking openssl (1.1.1n-0+deb11u4) ...
 Selecting previously unselected package ca-certificates.
 Preparing to unpack .../10-ca-certificates_20210119_all.deb ...
 Unpacking ca-certificates (20210119) ...
@@ -132,11 +132,11 @@ Selecting previously unselected package libssh2-1:amd64.
 Preparing to unpack .../38-libssh2-1_1.9.0-2_amd64.deb ...
 Unpacking libssh2-1:amd64 (1.9.0-2) ...
 Selecting previously unselected package libcurl4:amd64.
-Preparing to unpack .../39-libcurl4_7.74.0-1.3+deb11u3_amd64.deb ...
-Unpacking libcurl4:amd64 (7.74.0-1.3+deb11u3) ...
+Preparing to unpack .../39-libcurl4_7.74.0-1.3+deb11u5_amd64.deb ...
+Unpacking libcurl4:amd64 (7.74.0-1.3+deb11u5) ...
 Selecting previously unselected package curl.
-Preparing to unpack .../40-curl_7.74.0-1.3+deb11u3_amd64.deb ...
-Unpacking curl (7.74.0-1.3+deb11u3) ...
+Preparing to unpack .../40-curl_7.74.0-1.3+deb11u5_amd64.deb ...
+Unpacking curl (7.74.0-1.3+deb11u5) ...
 Selecting previously unselected package sbsigntool.
 Preparing to unpack .../41-sbsigntool_0.9.2-2_amd64.deb ...
 Unpacking sbsigntool (0.9.2-2) ...
@@ -186,8 +186,8 @@ Selecting previously unselected package gcc.
 Preparing to unpack .../56-gcc_4%3a10.2.1-1_amd64.deb ...
 Unpacking gcc (4:10.2.1-1) ...
 Selecting previously unselected package libcurl3-gnutls:amd64.
-Preparing to unpack .../57-libcurl3-gnutls_7.74.0-1.3+deb11u3_amd64.deb ...
-Unpacking libcurl3-gnutls:amd64 (7.74.0-1.3+deb11u3) ...
+Preparing to unpack .../57-libcurl3-gnutls_7.74.0-1.3+deb11u5_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.74.0-1.3+deb11u5) ...
 Selecting previously unselected package libexpat1:amd64.
 Preparing to unpack .../58-libexpat1_2.2.10-2+deb11u5_amd64.deb ...
 Unpacking libexpat1:amd64 (2.2.10-2+deb11u5) ...
@@ -195,11 +195,11 @@ Selecting previously unselected package liberror-perl.
 Preparing to unpack .../59-liberror-perl_0.17029-1_all.deb ...
 Unpacking liberror-perl (0.17029-1) ...
 Selecting previously unselected package git-man.
-Preparing to unpack .../60-git-man_1%3a2.30.2-1_all.deb ...
-Unpacking git-man (1:2.30.2-1) ...
+Preparing to unpack .../60-git-man_1%3a2.30.2-1+deb11u2_all.deb ...
+Unpacking git-man (1:2.30.2-1+deb11u2) ...
 Selecting previously unselected package git.
-Preparing to unpack .../61-git_1%3a2.30.2-1_amd64.deb ...
-Unpacking git (1:2.30.2-1) ...
+Preparing to unpack .../61-git_1%3a2.30.2-1+deb11u2_amd64.deb ...
+Unpacking git (1:2.30.2-1+deb11u2) ...
 Selecting previously unselected package libc-dev-bin.
 Preparing to unpack .../62-libc-dev-bin_2.31-13+deb11u5_amd64.deb ...
 Unpacking libc-dev-bin (2.31-13+deb11u5) ...
@@ -225,8 +225,8 @@ Selecting previously unselected package libwebp6:amd64.
 Preparing to unpack .../69-libwebp6_0.6.1-2.1_amd64.deb ...
 Unpacking libwebp6:amd64 (0.6.1-2.1) ...
 Selecting previously unselected package libtiff5:amd64.
-Preparing to unpack .../70-libtiff5_4.2.0-1+deb11u1_amd64.deb ...
-Unpacking libtiff5:amd64 (4.2.0-1+deb11u1) ...
+Preparing to unpack .../70-libtiff5_4.2.0-1+deb11u3_amd64.deb ...
+Unpacking libtiff5:amd64 (4.2.0-1+deb11u3) ...
 Selecting previously unselected package libxau6:amd64.
 Preparing to unpack .../71-libxau6_1%3a1.0.9-1_amd64.deb ...
 Unpacking libxau6:amd64 (1:1.0.9-1) ...
@@ -252,8 +252,8 @@ Selecting previously unselected package libc-devtools.
 Preparing to unpack .../78-libc-devtools_2.31-13+deb11u5_amd64.deb ...
 Unpacking libc-devtools (2.31-13+deb11u5) ...
 Selecting previously unselected package linux-libc-dev:amd64.
-Preparing to unpack .../79-linux-libc-dev_5.10.158-2_amd64.deb ...
-Unpacking linux-libc-dev:amd64 (5.10.158-2) ...
+Preparing to unpack .../79-linux-libc-dev_5.10.162-1_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (5.10.162-1) ...
 Selecting previously unselected package libcrypt-dev:amd64.
 Preparing to unpack .../80-libcrypt-dev_1%3a4.4.18-4_amd64.deb ...
 Unpacking libcrypt-dev:amd64 (1:4.4.18-4) ...
@@ -306,7 +306,7 @@ Setting up binutils-common:amd64 (2.35.2-2) ...
 Setting up libnghttp2-14:amd64 (1.43.0-1) ...
 Setting up libdeflate0:amd64 (1.7-1) ...
 Setting up less (551-2) ...
-Setting up linux-libc-dev:amd64 (5.10.158-2) ...
+Setting up linux-libc-dev:amd64 (5.10.162-1) ...
 Setting up libctf-nobfd0:amd64 (2.35.2-2) ...
 Setting up libgomp1:amd64 (10.2.1-6) ...
 Setting up bzip2 (1.0.8-4) ...
@@ -333,16 +333,16 @@ Setting up libmd0:amd64 (1.0.3-3) ...
 Setting up libnsl-dev:amd64 (1.3.0-2) ...
 Setting up sensible-utils (0.0.14) ...
 Setting up libcrypt-dev:amd64 (1:4.4.18-4) ...
-Setting up git-man (1:2.30.2-1) ...
+Setting up git-man (1:2.30.2-1+deb11u2) ...
 Setting up libssh2-1:amd64 (1.9.0-2) ...
 Setting up netbase (6.3) ...
-Setting up libtiff5:amd64 (4.2.0-1+deb11u1) ...
+Setting up libtiff5:amd64 (4.2.0-1+deb11u3) ...
 Setting up sbsigntool (0.9.2-2) ...
 Setting up libbinutils:amd64 (2.35.2-2) ...
 Setting up libfido2-1:amd64 (1.6.0-2) ...
 Setting up libisl23:amd64 (0.23-1) ...
 Setting up libc-dev-bin (2.31-13+deb11u5) ...
-Setting up openssl (1.1.1n-0+deb11u3) ...
+Setting up openssl (1.1.1n-0+deb11u4) ...
 Setting up libbsd0:amd64 (0.11.3-1) ...
 Setting up publicsuffix (20220811.1734-0+deb11u1) ...
 Setting up libcc1-0:amd64 (10.2.1-6) ...
@@ -359,7 +359,7 @@ Setting up libxcb1:amd64 (1.14-3) ...
 Setting up libgcc-10-dev:amd64 (10.2.1-6) ...
 Setting up libedit2:amd64 (3.1-20191231-2+b1) ...
 Setting up libldap-2.4-2:amd64 (2.4.57+dfsg-3+deb11u1) ...
-Setting up libcurl3-gnutls:amd64 (7.74.0-1.3+deb11u3) ...
+Setting up libcurl3-gnutls:amd64 (7.74.0-1.3+deb11u5) ...
 Setting up ca-certificates (20210119) ...
 debconf: unable to initialize frontend: Dialog
 debconf: (TERM is not set, so the dialog frontend is not usable.)
@@ -374,10 +374,10 @@ debconf: (TERM is not set, so the dialog frontend is not usable.)
 debconf: falling back to frontend: Readline
 Setting up libperl5.32:amd64 (5.32.1-4+deb11u2) ...
 Setting up cpp (4:10.2.1-1) ...
-Setting up libcurl4:amd64 (7.74.0-1.3+deb11u3) ...
+Setting up libcurl4:amd64 (7.74.0-1.3+deb11u5) ...
 Setting up libc6-dev:amd64 (2.31-13+deb11u5) ...
 Setting up libx11-6:amd64 (2:1.7.2-1) ...
-Setting up curl (7.74.0-1.3+deb11u3) ...
+Setting up curl (7.74.0-1.3+deb11u5) ...
 Setting up libxmuu1:amd64 (2:1.1.2-2+b3) ...
 Setting up binutils-x86-64-linux-gnu (2.35.2-2) ...
 Setting up libxpm4:amd64 (1:3.5.12-1) ...
@@ -395,7 +395,7 @@ Setting up libfontconfig1:amd64 (2.13.1-4.2) ...
 Setting up gcc (4:10.2.1-1) ...
 Setting up liberror-perl (0.17029-1) ...
 Setting up libgd3:amd64 (2.3.0-2) ...
-Setting up git (1:2.30.2-1) ...
+Setting up git (1:2.30.2-1+deb11u2) ...
 Setting up libc-devtools (2.31-13+deb11u5) ...
 Processing triggers for libc-bin (2.31-13+deb11u5) ...
 Processing triggers for ca-certificates (20210119) ...
@@ -403,14 +403,14 @@ Updating certificates in /etc/ssl/certs...
 0 added, 0 removed; done.
 Running hooks in /etc/ca-certificates/update.d...
 done.
-Removing intermediate container 25cdf0f6635b
- ---> e16ff7b61f4a
-Step 5/24 : WORKDIR /build
- ---> Running in 27f694d93198
-Removing intermediate container 27f694d93198
- ---> ff675afd49b0
-Step 6/24 : RUN git clone --recursive -b 15.7 https://github.com/rhboot/shim.git shim-15.7
- ---> Running in e90a0f9db1d0
+Removing intermediate container 286bd0d3efd0
+ ---> a63555662b6c
+Step 5/23 : WORKDIR /build
+ ---> Running in 39d3223b6ca9
+Removing intermediate container 39d3223b6ca9
+ ---> 236b05feb881
+Step 6/23 : RUN git clone --recursive -b 15.7 https://github.com/rhboot/shim.git shim-15.7
+ ---> Running in ad12a89c2aec
 [91mCloning into 'shim-15.7'...
 [0m[91mNote: switching to '11491619f4336fef41c3519877ba242161763580'.
 
@@ -432,99 +432,58 @@ Turn off this advice by setting config variable advice.detachedHead to false
 [0m[91mSubmodule 'gnu-efi' (https://github.com/rhboot/gnu-efi.git) registered for path 'gnu-efi'
 [0m[91mCloning into '/build/shim-15.7/gnu-efi'...
 [0mSubmodule path 'gnu-efi': checked out '03670e14f263ad571bf0f39dffa9b8d23535f4d3'
-Removing intermediate container e90a0f9db1d0
- ---> a0f414a5d6ed
-Step 7/24 : WORKDIR /build/shim-15.7
- ---> Running in d5ec1d718042
-Removing intermediate container d5ec1d718042
- ---> 6851a02e28bf
-Step 8/24 : RUN git checkout 657b2483ca6e9fcf2ad8ac7ee577ff546d24c3aa
- ---> Running in a4e1b8b0a456
+Removing intermediate container ad12a89c2aec
+ ---> cac68175c54e
+Step 7/23 : WORKDIR /build/shim-15.7
+ ---> Running in 56f6baf43be2
+Removing intermediate container 56f6baf43be2
+ ---> 8f8b294cb314
+Step 8/23 : RUN git checkout 657b2483ca6e9fcf2ad8ac7ee577ff546d24c3aa
+ ---> Running in e8b116b80789
 [91mPrevious HEAD position was 1149161 Update version to 15.7
 [0m[91mHEAD is now at 657b248 Make sbat_var.S parse right with buggy gcc/binutils
-[0mRemoving intermediate container a4e1b8b0a456
- ---> f0711d66ea1d
-Step 9/24 : RUN wget -O post-process-pe.c  https://raw.githubusercontent.com/rhboot/shim/c0d78aa1c4d9d2add1e477d4e5a4f8cd28950b15/post-process-pe.c
- ---> Running in 0229b8f99066
-[91m--2022-12-20 18:05:04--  https://raw.githubusercontent.com/rhboot/shim/c0d78aa1c4d9d2add1e477d4e5a4f8cd28950b15/post-process-pe.c
-[0m[91mResolving raw.githubusercontent.com (raw.githubusercontent.com)... [0m[91m185.199.111.133, 185.199.109.133, 185.199.108.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... [0m[91mconnected.
-[0m[91mHTTP request sent, awaiting response... [0m[91m200 OK
-Length: 17463 (17K) [text/plain]
-Saving to: 'post-process-pe.c'
-[0m[91m
-     0K .[0m[91m.[0m[91m..[0m[91m.[0m[91m.[0m[91m..[0m[91m.[0m[91m.[0m[91m .......                                    100% 1.16M=0.01s
-
-2022-12-20 18:05:04 (1.16 MB/s) - 'post-process-pe.c' saved [17463/17463]
-
-[0mRemoving intermediate container 0229b8f99066
- ---> 2ba7cd11bb6c
-Step 10/24 : RUN wget -O BUILDING https://raw.githubusercontent.com/rhboot/shim/a53b9f7ceec1dfa1487f4d675573449c5b2a16fb/BUILDING
- ---> Running in 319ad518bd81
-[91m--2022-12-20 18:05:05--  https://raw.githubusercontent.com/rhboot/shim/a53b9f7ceec1dfa1487f4d675573449c5b2a16fb/BUILDING
-[0m[91mResolving raw.githubusercontent.com (raw.githubusercontent.com)... [0m[91m185.199.110.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... [0m[91mconnected.
-[0m[91mHTTP request sent, awaiting response... [0m[91m200 OK
-Length: 3855 (3.8K) [text/plain]
-Saving to: 'BUILDING'
-[0m[91m
-     0K .[0m[91m.[0m[91m.                                                   100% 1.40M=0.003s
-
-2022-12-20 18:05:05 (1.40 MB/s) - 'BUILDING' saved [3855/3855]
-
-[0mRemoving intermediate container 319ad518bd81
- ---> c3f7d23e9805
-Step 11/24 : RUN wget -O Make.defaults https://raw.githubusercontent.com/rhboot/shim/a53b9f7ceec1dfa1487f4d675573449c5b2a16fb/Make.defaults
- ---> Running in 0a14e97d2392
-[91m--2022-12-20 18:05:06--  https://raw.githubusercontent.com/rhboot/shim/a53b9f7ceec1dfa1487f4d675573449c5b2a16fb/Make.defaults
-[0m[91mResolving raw.githubusercontent.com (raw.githubusercontent.com)... [0m[91m185.199.110.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... [0m[91mconnected.
-[0m[91mHTTP request sent, awaiting response... [0m[91m200 OK
-Length: 6142 (6.0K) [text/plain]
-Saving to: 'Make.defaults'
-[0m[91m
-     0K .[0m[91m.[0m[91m..[0m[91m.                                                 100% 1.45M=0.004s
-
-[0m[91m2022-12-20 18:05:06 (1.45 MB/s) - 'Make.defaults' saved [6142/6142]
-
-[0mRemoving intermediate container 0a14e97d2392
- ---> d85a72341b9c
-Step 12/24 : RUN wget -O Makefile https://raw.githubusercontent.com/rhboot/shim/a53b9f7ceec1dfa1487f4d675573449c5b2a16fb/Makefile
- ---> Running in 7d6660dde973
-[91m--2022-12-20 18:05:07--  https://raw.githubusercontent.com/rhboot/shim/a53b9f7ceec1dfa1487f4d675573449c5b2a16fb/Makefile
-[0m[91mResolving raw.githubusercontent.com (raw.githubusercontent.com)... [0m[91m185.199.110.133, 185.199.108.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... [0m[91mconnected.
-[0m[91mHTTP request sent, awaiting response... [0m[91m200 OK
-Length: 12278 (12K) [text/plain]
-Saving to: 'Makefile'
-[0m[91m
-     0K .[0m[91m.[0m[91m..[0m[91m.[0m[91m.[0m[91m..[0m[91m.[0m[91m.[0m[91m .                                          100% 1.19M[0m[91m=0.01s
-
-[0m[91m2022-12-20 18:05:07 (1.19 MB/s) - 'Makefile' saved [12278/12278]
-
-[0mRemoving intermediate container 7d6660dde973
- ---> 5b9b030f56c0
-Step 13/24 : RUN sed -i '45s/false/true/' post-process-pe.c
- ---> Running in ccb5a552b2b9
-Removing intermediate container ccb5a552b2b9
- ---> 58a5af14f202
-Step 14/24 : ADD ${CERT_FILE} .
- ---> 7012f1984868
-Step 15/24 : ADD sbat.csv .
- ---> d049239d5d5e
-Step 16/24 : RUN cat sbat.csv >> data/sbat.csv && cat data/sbat.csv
- ---> Running in 15aec9eea500
+[0mRemoving intermediate container e8b116b80789
+ ---> 76298bbc1a96
+Step 9/23 : RUN git checkout 7c7642530fab73facaf3eac233cfbce29e10b0ef
+ ---> Running in 1f392d7acc15
+[91mPrevious HEAD position was 657b248 Make sbat_var.S parse right with buggy gcc/binutils
+[0m[91mHEAD is now at 7c76425 Enable the NX compatibility flag by default.
+[0mRemoving intermediate container 1f392d7acc15
+ ---> a36976546a77
+Step 10/23 : ADD 0001-MS_Validation_Patch.patch .
+ ---> c31bc45cc8cc
+Step 11/23 : RUN git apply 0001-MS_Validation_Patch.patch
+ ---> Running in 11cb29e6743d
+[91m0001-MS_Validation_Patch.patch:31: trailing whitespace.
+	}	
+0001-MS_Validation_Patch.patch:46: trailing whitespace.
+		EFI_IMAGE_DLLCHARACTERISTICS_NX_COMPAT == 
+0001-MS_Validation_Patch.patch:49: trailing whitespace.
+	
+0001-MS_Validation_Patch.patch:113: trailing whitespace.
+			break;	
+[0m[91mwarning: 4 lines add whitespace errors.
+[0mRemoving intermediate container 11cb29e6743d
+ ---> b75d3536e83d
+Step 12/23 : ADD ${CERT_FILE} .
+ ---> 834d2ee5b4f2
+Step 13/23 : ADD sbat.csv .
+ ---> b6b9e74662e7
+Step 14/23 : RUN cat sbat.csv >> data/sbat.csv && cat data/sbat.csv
+ ---> Running in e898d48c97e6
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,3,UEFI shim,shim,1,https://github.com/rhboot/shim
 shim.lux,1,LUX,shim,15.7,mail:lux@lenovo.com
-Removing intermediate container 15aec9eea500
- ---> 799507913f26
-Step 17/24 : RUN mkdir build-x64
- ---> Running in c68698be132e
-Removing intermediate container c68698be132e
- ---> 82c182904818
-Step 18/24 : RUN make -C build-x64 ARCH=x86_64 VENDOR_CERT_FILE=../${CERT_FILE} TOPDIR=.. -f ../Makefile
- ---> Running in b7191267384a
+Removing intermediate container e898d48c97e6
+ ---> cde00f99d4a8
+Step 15/23 : ADD LUX_CA_PUB.cer .
+ ---> 168360a296c2
+Step 16/23 : RUN mkdir build-x64
+ ---> Running in 557a4f7bfc19
+Removing intermediate container 557a4f7bfc19
+ ---> c3c2ab110c7b
+Step 17/23 : RUN make -C build-x64 ARCH=x86_64 VENDOR_CERT_FILE=../${CERT_FILE} TOPDIR=.. -f ../Makefile
+ ---> Running in 8a446d0cd72a
 make: Entering directory '/build/shim-15.7/build-x64'
 sed	-e "s,@@VERSION@@,15.7," \
 	-e "s,@@UNAME@@,Linux x86_64 unknown unknown GNU/Linux," \
@@ -1165,22 +1124,22 @@ ms_validation():378:   4K-Alignment: PASS
 ms_validation():392: Section-Wr-Exe: PASS
 fix_checksum():444: Updating checksum from 0x0002549f to 0x0002559f
 make: Leaving directory '/build/shim-15.7/build-x64'
-Removing intermediate container b7191267384a
- ---> 2e3c6eabd904
-Step 19/24 : RUN mkdir /build/output
- ---> Running in d1451779bef5
-Removing intermediate container d1451779bef5
- ---> 0dd293cc66f3
-Step 20/24 : RUN cp build-x64/shimx64.efi /build/output
- ---> Running in 1f6de64da904
-Removing intermediate container 1f6de64da904
- ---> 69676d63ff8b
-Step 21/24 : RUN cp ${CERT_FILE} /build/output
- ---> Running in 77b099aeb20c
-Removing intermediate container 77b099aeb20c
- ---> 4f2225622a26
-Step 22/24 : RUN objdump -s -j .sbatlevel /build/output/shimx64.efi
- ---> Running in 9a82596252f3
+Removing intermediate container 8a446d0cd72a
+ ---> bfb1f94bcbb9
+Step 18/23 : RUN mkdir /build/output
+ ---> Running in 58d44e348bdc
+Removing intermediate container 58d44e348bdc
+ ---> 3ac03d2d2a7d
+Step 19/23 : RUN cp build-x64/shimx64.efi /build/output
+ ---> Running in 83c645044911
+Removing intermediate container 83c645044911
+ ---> d1c159939971
+Step 20/23 : RUN cp ${CERT_FILE} /build/output
+ ---> Running in b7c15914cee7
+Removing intermediate container b7c15914cee7
+ ---> d7fd53052608
+Step 21/23 : RUN objdump -s -j .sbatlevel /build/output/shimx64.efi
+ ---> Running in b364e99819cb
 
 /build/output/shimx64.efi:     file format pei-x86-64
 
@@ -1190,10 +1149,10 @@ Contents of section .sbatlevel:
  85020 75622c32 0a007362 61742c31 2c323032  ub,2..sbat,1,202
  85030 32313131 3530300a 7368696d 2c320a67  2111500.shim,2.g
  85040 7275622c 330a00                      rub,3..         
-Removing intermediate container 9a82596252f3
- ---> b0c5b7350e34
-Step 23/24 : RUN objdump -j .sbat -s /build/output/shimx64.efi
- ---> Running in b7fc34a5ea34
+Removing intermediate container b364e99819cb
+ ---> 1f686fc40f68
+Step 22/23 : RUN objdump -j .sbat -s /build/output/shimx64.efi
+ ---> Running in 09d11ecc3b8c
 
 /build/output/shimx64.efi:     file format pei-x86-64
 
@@ -1209,13 +1168,13 @@ Contents of section .sbat:
  d2080 696d0a73 68696d2e 6c75782c 312c4c55  im.shim.lux,1,LU
  d2090 582c7368 696d2c31 352e372c 6d61696c  X,shim,15.7,mail
  d20a0 3a6c7578 406c656e 6f766f2e 636f6d0a  :lux@lenovo.com.
-Removing intermediate container b7fc34a5ea34
- ---> 1ca63028143a
-Step 24/24 : RUN sha256sum /build/output/*
- ---> Running in c14273dd9cee
+Removing intermediate container 09d11ecc3b8c
+ ---> 6a2dd1eb488d
+Step 23/23 : RUN sha256sum /build/output/*
+ ---> Running in 9c4264a42824
 99abba42419f80cc967a95cbb6a0ecd754f4d243accb778ed2fef17899d3618e  /build/output/LUX_CA_PUB.cer
 5900792c563b2a47f8806afc2be18f472c016aec612fb8679550e7116457fe36  /build/output/shimx64.efi
-Removing intermediate container c14273dd9cee
- ---> 2f87051ba899
-Successfully built 2f87051ba899
+Removing intermediate container 9c4264a42824
+ ---> f914766e9e5f
+Successfully built f914766e9e5f
 Successfully tagged shim:latest
