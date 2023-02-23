@@ -78,17 +78,17 @@ yes.
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to get this binary:
 *******************************************************************************
-https://github.com/lenovo-lux/shim-review/tree/lux1.0-shim-x64-20230111
+https://github.com/lenovo-lux/shim-review/tree/lux1.0-shim-x64-20230223
 
 *******************************************************************************
 ### What patches are being applied and why:
 *******************************************************************************
 1) Make sbat_var.S parse right with buggy gcc/binutils #535
-https://github.com/rhboot/shim/pull/535/
-2) Add validation function for Microsoft signing #531
-https://github.com/rhboot/shim/pull/531/commits
-3) Enable the NX compatibility flag by default. #530
-https://github.com/rhboot/shim/pull/530/files
+https://github.com/rhboot/shim/pull/535
+2) Enable the NX compatibility flag by default. #530
+https://github.com/rhboot/shim/pull/530
+3) Add validation function for Microsoft signing #531
+https://github.com/rhboot/shim/pull/531
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader what exact implementation of Secureboot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)

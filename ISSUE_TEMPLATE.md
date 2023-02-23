@@ -12,7 +12,7 @@ Confirm the following are included in your repo, checking each box:
 *******************************************************************************
 ### What is the link to your tag in a repo cloned from rhboot/shim-review?
 *******************************************************************************
-https://github.com/lenovo-lux/shim-review/tree/lux1.0-shim-x64-20230111
+https://github.com/lenovo-lux/shim-review/tree/lux1.0-shim-x64-20230223
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
