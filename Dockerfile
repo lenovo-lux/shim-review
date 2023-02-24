@@ -13,9 +13,6 @@ WORKDIR /build/shim-15.7
 
 # Make sbat_var.S parse right with buggy gcc/binutils #535
 # https://github.com/rhboot/shim/pull/535/
-# https://github.com/rhboot/shim/commit/657b2483ca6e9fcf2ad8ac7ee577ff546d24c3aa
-RUN git checkout 657b2483ca6e9fcf2ad8ac7ee577ff546d24c3aa
-
 # Enable the NX compatibility flag by default. #530
 # https://github.com/rhboot/shim/pull/530
 # https://github.com/rhboot/shim/commit/7c7642530fab73facaf3eac233cfbce29e10b0ef
